@@ -1,0 +1,21 @@
+{
+  "name": "rxjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run dev",
+    "dev": "npm run watchify & npm run server",
+    "watchify": "watchify -p [ browserify-livereload --host localhost --port 1337 ] index.js -o bundle.js",
+    "server": "http-server -o"
+  },
+  "keywords": [],
+  "author": "yeshanqi <ysq1989@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify-livereload": "^1.0.8",
+    "http-server": "^0.9.0",
+    "watchify": "^3.7.0"
+  }
+}
